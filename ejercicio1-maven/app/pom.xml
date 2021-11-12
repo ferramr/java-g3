@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example-groupID</groupId>
-    <artifactId>app-artifactID</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>app</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>Raspi Project</name>
@@ -21,8 +21,8 @@
         <jvmargs.run></jvmargs.run>
         <jvmargs.debug></jvmargs.debug>
         
-        <slf4j.version>2.0.0-alpha1</slf4j.version>
-        <pi4j.version>2.0-SNAPSHOT</pi4j.version>
+        <slf4j.version>1.7.31</slf4j.version>
+        <pi4j.version>2.0</pi4j.version>
     </properties>
     
     <repositories>
@@ -112,7 +112,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathLayoutType>custom</classpathLayoutType>
                             <customClasspathLayout>lib/${artifact.artifactId}.${artifact.extension}</customClasspathLayout>
-                            <mainClass>com.example-groupID.Main</mainClass>
+                            <mainClass>com.example.Main</mainClass>
                         </manifest>
                     </archive>
                     <outputDirectory>${finalJarDir}</outputDirectory>
